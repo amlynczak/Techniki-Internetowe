@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 5</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: auto;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid #4B0082;
+            margin: 0 auto;
+        }
+
+        .table{
+            float: left;
+            width: 50%;
+        }
+
+        td{
+            border: none;
+            padding: 8px;
+            text-align: center;
+            width: auto;
+            height: auto;
+        }
+
+        th{
+            border: none;
+            padding: 5px;
+            text-align: center;
+            background-color: #00FFFF;
+            color: #000;
+            height: auto;
+        }
+
+        .img{
+            width: 50%;
+            height: auto;
+            float: right;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: #00FF00
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: #F0F8FF;
+        }
+
+        tfoot tr{
+            background-color: #F0E68C;
+        }
+
+        header h1{
+            border: 1px solid #000;
+            height: auto;
+            text-align: center;
+        }
+
+        .oceny{
+            background-color: #B0C4DE ;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Laboratorium 1, Zadanie 5, HTML i CSS</h1>
+        </header>
+    </article>
+    <div class="table">
+        <table>
+            <thead>
+                <tr><th>Lp.</th><th>Imię</th><th>Nazwisko</th><th>Grupa</th><th>Ocena</th></tr>
+                <tr><th colspan="5" class="oceny">Oceny końcowe studentów</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Adam</td><td>Abacki</td><td>A</td><td>4</td></tr>
+                <tr><td>2</td><td>Ewa</td><td>Babacka</td><td>B</td><td>5</td></tr>
+                <tr><td>3</td><td>Edward</td><td>Cabacki</td><td>A</td><td>3</td></tr>
+                <tr><td>4</td><td>Tomasz</td><td>Dadacki</td><td>A</td><td>4</td></tr>
+                <tr><td>5</td><td>Anna</td><td>Kowalska</td><td>A</td><td>3</td></tr>
+                <tr><td>6</td><td>Marek</td><td>Zawacki</td><td>A</td><td>5</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><th colspan="5" class="oceny">Oceny średnie w grupach</th></tr>
+                <tr><td>1</td><td colspan="2"></td><td>A</td><td>4</td></tr>
+                <tr><td>2</td><td colspan="2"></td><td>B</td><td>4</td></tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="img">
+        <img src="agh.jpg" alt="przykładowe zdjęcie - logo AGH"/>
+    </div>
+</body>
+</html>

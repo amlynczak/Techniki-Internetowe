@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="osoby.css" ?>
+<!DOCTYPE dane [
+<!ELEMENT dane (osoba+)>
+<!ELEMENT osoba (imie, nazwisko)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+]>
+<dane>
+  <osoba>
+    <imie>Adam</imie>
+    <nazwisko>Kowalski</nazwisko>
+  </osoba>
+  <osoba>
+    <imie>Marek</imie>
+    <nazwisko>Abacki</nazwisko>
+  </osoba>
+  <osoba>
+    <imie>Andrzej</imie>
+    <nazwisko>Babacki</nazwisko>
+  </osoba>
+</dane>

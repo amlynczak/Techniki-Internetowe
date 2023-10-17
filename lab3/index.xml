@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<dane>
+  <grupa>
+    <nazwa>Grupa 1</nazwa>
+    <osoba>
+      <nazwisko>Abacki</nazwisko>
+      <imie>Adam</imie>
+      <mail>abacki@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Babacki</nazwisko>
+      <imie>Marek</imie>
+      <mail>babacki@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Cabacki</nazwisko>
+      <imie>Bogdan</imie>
+      <mail>cabacki@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Dabacka</nazwisko>
+      <imie>Ewa</imie>
+      <mail>dabacka@fis.agh.edu.pl</mail>
+    </osoba>
+  </grupa>
+  
+  <grupa>
+    <nazwa>Grupa 2</nazwa>
+    <osoba>
+      <nazwisko>Kowalski</nazwisko>
+      <imie>Adam</imie>
+      <mail>kowalski@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Manecki</nazwisko>
+      <imie>Marek</imie>
+      <mail>manecki@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Tytus</nazwisko>
+      <imie>Bogdan</imie>
+      <mail>tytus@fis.agh.edu.pl</mail>
+    </osoba>
+    <osoba>
+      <nazwisko>Zawadzka</nazwisko>
+      <imie>Ewa</imie>
+      <mail>zawadzka@fis.agh.edu.pl</mail>
+    </osoba>
+  </grupa>
+</dane>

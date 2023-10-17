@@ -1,0 +1,52 @@
+grupa{
+    display: block;
+    background-color: cyan;
+    padding: 50px;
+}
+
+nazwa{ 
+    display: block; 
+    text-align:left 
+}
+
+osoba{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: blue;
+
+}
+
+nazwisko{
+    display: block;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+}
+
+imie{
+    display: block;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+}
+
+mail{
+    display: block;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    font-style: italic;
+}
+
+osoba:nth-child(even){
+    background-color: #00FF00;
+}
+
+osoba:nth-child(odd){
+    background-color: #F0F8FF;
+}

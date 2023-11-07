@@ -1,0 +1,40 @@
+.form{
+    padding: 10px;
+    border: solid black 2px;
+    width: 500px;
+}
+
+#canvas{
+    margin: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border: thin inset #aaaaaa;
+}
+
+.svg{
+    margin: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border: thin inset #aaaaaa;
+}
+
+.div-canvas{
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.div-svg{
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.div-form{
+    width: 600px;
+    margin-left: 215px;
+}

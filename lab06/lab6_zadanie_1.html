@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Zad 1</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("keypress", Fun);
+        function Fun(evt){
+            if(String.fromCharCode(evt.charCode) == 'S' || String.fromCharCode(evt.charCode) == 's'){
+                alert("Wciśnięto klawisz S");
+            }
+            if(String.fromCharCode(evt.charCode) == 'c' || String.fromCharCode(evt.charCode) == 'C'){
+                var k1 = prompt("Podaj liczbę studentów:");
+                if(k1 > 0){
+                    document.write("Podano liczbę studentów: "+ k1 +"<br />");
+                }
+            }
+            if(String.fromCharCode(evt.charCode) == 'k' || String.fromCharCode(evt.charCode) == 'K'){
+                var k2 = confirm("Czy chcesz na pewno zakończyć pracę?");
+                if(k2){
+                    alert("Dziękujemy za współpracę!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

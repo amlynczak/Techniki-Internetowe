@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 6 - Zadanie 6</title>
+</head>
+<body>
+    <div class="div-form">
+        <form id="form" class="form">
+            <table>
+                <thead>
+                    <tr><th>Wierczhołek</th><th>Współrzędna X</th><th>Współrzędna Y</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th>1</th><th><input type="number" id="x1" name="x1"></th><th><input type="number" id="y1" name="y1"></th></tr>
+                    <tr><th>2</th><th><input type="number" id="x2" name="x2"></th><th><input type="number" id="y2" name="y2"></th></tr>
+                    <tr><th>3</th><th><input type="number" id="x3" name="x3"></th><th><input type="number" id="y3" name="y3"></th></tr>
+                    <tr><th>4</th><th><input type="number" id="x4" name="x4"></th><th><input type="number" id="y4" name="y4"></th></tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Rysuj">
+            <p>Obwód: <span id="obw">---</span> </p>
+        </form>
+    </div>
+    <div class="div-canvas">
+        <h1>Canvas</h1>
+        <canvas id="canvas" class="canvas" width="400" height="400">
+            Canvas not supported
+        </canvas>
+    </div>
+    <div class="div-svg">
+        <h1>SVG</h1>
+        <svg id="svg" class="svg" width="400" height="400">
+            <polygon id="polygon" fill="transparent" stroke="black" stroke-width="2" points=""></polygon>
+        </svg>
+    </div>
+    
+    <script src="zadanie6.js"></script>
+    
+</body>
+</html>

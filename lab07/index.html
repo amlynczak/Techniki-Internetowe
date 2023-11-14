@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 7</title>
+    <script src="zadanie7.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form action="#" name="wybor" id="wybor">
+    Quiz: Którą porę roku lubisz? <br>
+    <label for="wiosna"><input type="radio" name="wybor" id="wiosna" value="wiosna"> Wiosna </label><br>
+    <label for="lato"><input type="radio" name="wybor" id="lato" value="lato"> Lato </label><br>
+    <label for="jesien"><input type="radio" name="wybor" id="jesien" value="jesien"> Jesień </label><br>
+    <label for="zima"><input type="radio" name="wybor" id="zima" value="zima"> Zima </label><br>
+    <input type="submit" value="Wyślij" onclick="sendRequest(event)">
+</form>
+    <div id="wykres">
+        <canvas id="e" width="500" height="200"></canvas>
+    </div>
+</body>
+</html>

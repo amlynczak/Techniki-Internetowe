@@ -3,8 +3,8 @@
  require 'vendor/autoload.php' ;
   
  class db {
-     private $user = "1mlynczak" ;
-     private $pass = "pass1mlynczak";
+     private $user = "user" ; //need to change
+     private $pass = "password"; //need to change
      private $host = "172.20.44.25";
      private $base = "1mlynczak" ;
      private $coll = "student";

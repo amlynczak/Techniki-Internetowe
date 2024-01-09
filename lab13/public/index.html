@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Client</title>
+</head>
+<body>
+
+<div id="login-container">
+    <h2>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="authenticated-container" style="display:none">
+    <h2>Authenticated Content</h2>
+    <button onclick="getBooks()">Get Books</button>
+    <button onclick="logout()">Logout</button>
+    <div id="books-container"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+aby projekt działał należy do katalogu dodać bibliotekę obsługującą bazę danych MongoBD - vendor

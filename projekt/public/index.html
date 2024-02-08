@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Układ Słoneczny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <canvas id="solarSystemCanvas"></canvas>
+  </div>
+  <div>
+    <div>
+      <h2>Układ Słoneczny</h2>
+      <article>
+        Układ słoneczny to kosmiczne arcydzieło, w którym każda planeta tańczy w rytmie <br> Słońca. 
+        Od błyszczącego Merkurego po tajemniczego Neptuna, każda z tych <br> niebiańskich piękności 
+        ma swoją unikalną historię do opowiedzenia. <br> Czy wiesz, że Jowisz, gigantyczna gazowa planeta, 
+        jest jak własne małe słońce, <br> otoczona wirującymi księżycami? A może fascynuje Cię tajemniczy Mars, 
+        który kiedyś mógł być domem dla życia?
+      </article>
+      <br>
+      <p id="info">W celu uzyskania większej ilości informacji zaloguj się lub zarejestruj do serwisu</p>
+      <br>
+    </div>
+    <div>
+      <label for="speedControl">Prędkość animacji:</label>
+      <input type="number" id="speedControl" min="0.1" max="1" step="0.1" value="0.5">
+      <br>
+      <label for="sizeControl">Rozmiar planet:</label>
+      <input type="number" id="sizeControl" name="sizeControl" min="1" max="3" step="0.1" value="1">
+      <button onclick="applySize()">Zastosuj rozmiar</button>
+      <br>
+    </div>
+    <div id="formularze">
+      <div id="login-container">
+        <h2>Logowanie</h2>
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button onclick="login()">Zaloguj</button>
+      </div>
+      <div id="register-container">
+        <h2>Rejestracja</h2>
+        <label for="new-username">Nazwa użytkownika:</label>
+        <input type="text" id="new-username" name="new-username" required>
+        <br>
+        <label for="new-password">Hasło:</label>
+        <input type="password" id="new-password" name="new-password" required>
+        <br>
+        <label for="confirm-password">Potwierdź hasło:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+        <label for="favorite-planet">Ulubiona planeta:</label>
+          <select id="favorite-planet" name="favorite-planet" required>
+            <option value="Merkury">Merkury</option>
+            <option value="Wenus">Wenus</option>
+            <option value="Ziemia">Ziemia</option>
+            <option value="Mars">Mars</option>
+            <option value="Jowisz">Jowisz</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Uran">Uran</option>
+            <option value="Neptun">Neptun</option>
+          </select>
+        <button onclick="register()">Zarejestruj</button>
+      </div>
+    </div>
+    
+    <div id="usrLogged" style="display: none">
+      <button onclick="logout()">Wyloguj</button>
+      <button onclick="userInfo()">Profil użytkownika</button>
+    </div>
+    <div id="authenticated-container" style="display:none;">
+      <h2>Wybierz planetę:</h2>
+      <nav>
+        <ul>
+          <button onclick="loadPlanetPage('merkury')">Merkury</button>
+          <button onclick="loadPlanetPage('wenus')">Wenus</button>
+          <button onclick="loadPlanetPage('ziemia')">Ziemia</button>
+          <button onclick="loadPlanetPage('mars')">Mars</button>
+          <button onclick="loadPlanetPage('jowisz')">Jowisz</button>
+          <button onclick="loadPlanetPage('saturn')">Saturn</button>
+          <button onclick="loadPlanetPage('uran')">Uran</button>
+          <button onclick="loadPlanetPage('neptun')">Neptun</button>
+      </ul>
+      </nav>
+      <div id="planet-info-container"></div>
+      <div id="user-profile" style="display: none">
+        <h2>Profil użytkownika</h2>
+        <div>
+          <p>Nazwa użytkownika: <span id="usernameSpan"></span></p>
+          <p>Ulubiona planeta: <span id="favoritePlanetSpan"></span></p>
+          <p>Zapisana prędkość animacji: <span id="animationSpeedSpan"></span></p>
+          <p>Zapisany rozmiar planet: <span id="animationSizeSpan"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script src="login.js"></script>
+  <script src="animation.js"></script>
+  
+</body>
+</html>

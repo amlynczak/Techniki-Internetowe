@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 20px;
+}
+
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+#planetInfo {
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 20px;
+}
+
+#planetSelector {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 8px;
+  color: white;
+}
+
+input, select, button {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p, h2, article, li, label, span {
+  color: white;
+}
+
+#planet-info-container {
+  color: white;
+}
+
+#formularze {
+  display: flex;
+}
+
+#login-container,
+#register-container {
+  margin-right: 20px;
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004080;
+}
+
+#speedControl, #sizeControl{
+  width: 50%;
+}

@@ -1,48 +1,52 @@
-/* Apply a reset to remove default margin and padding */
 body, h1, ul, li {
     margin: 0;
     padding: 0;
   }
   
-  /* Style the body */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 20px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
   
-  /* Style the header (H1) */
-  h1 {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
   
-  /* Style the main list (UL) */
-  ul {
-    list-style-type: none;
-    padding: 20px;
-  }
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
   
-  /* Style list items (LI) for each lab */
-  li {
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
+
+li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
   
-  /* Style links (A) */
-  a {
-    text-decoration: none;
-    color: #0074d9;
-    font-weight: bold;
-  }
+a {
+  text-decoration: none;
+  color: #0074d9;
+  font-weight: bold;
+}
   
-  /* On hover, change link color */
-  a:hover {
-    color: #0056b3;
-  }
-  
+a:hover {
+  color: #0056b3;
+}
+ 
+p{
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+elem:hover{
+  background-color: #333;
+  color: #fff;
+}
